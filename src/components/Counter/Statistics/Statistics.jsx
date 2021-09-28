@@ -1,13 +1,21 @@
+import PropTypes from 'prop-types';
+
 function Statistics({ total, percentage, options: { good, neutral, bad } }) {
   return (
     <div>
-      <span>Good: {good}</span>
-      <span>Neutral: {neutral}</span>
-      <span>Bad: {bad}</span>
-      <span>Total: {total}</span>
-      <span>Positiv Feedback: {percentage}</span>
+      <p>Good: {good}</p>
+      <p>Neutral: {neutral}</p>
+      <p>Bad: {bad}</p>
+      <p>Total: {total}</p>
+      <p>Positiv Feedback: {percentage}</p>
     </div>
   );
 }
+
+Statistics.propTypes = {
+  total: PropTypes.number.isRequired,
+  percentage: PropTypes.number.isRequired,
+  options: PropTypes.objectOf(PropTypes.number.isRequired).isRequired,
+};
 
 export default Statistics;

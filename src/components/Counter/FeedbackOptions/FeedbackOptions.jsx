@@ -1,4 +1,5 @@
-import React from 'react';
+// import React from 'react';
+import PropTypes from 'prop-types';
 import s from 'components/Counter/FeedbackOptions/FeedbackOptions.module.css';
 
 const FeedbackOptions = ({ options, addFeedback }) => {
@@ -15,6 +16,11 @@ const FeedbackOptions = ({ options, addFeedback }) => {
       </label>
     );
   });
+};
+
+FeedbackOptions.propTypes = {
+  options: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+  addFeedback: PropTypes.func.isRequired,
 };
 
 export default FeedbackOptions;
