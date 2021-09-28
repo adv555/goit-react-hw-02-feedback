@@ -1,0 +1,71 @@
+/* html {
+  box-sizing: border-box;
+  height: 100%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.cornerButton {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.02rem;
+  cursor: pointer;
+  background: transparent;
+  border: 0.5rem solid currentColor;
+  padding: 1.5rem 2rem;
+  font-size: 2.2rem;
+  color: #06c17f;
+  position: relative;
+  transition: color 0.3s;
+}
+.cornerButton:not(:last-child) {
+  margin-right: 20px;
+}
+.cornerButton:hover {
+  color: pink;
+}
+.cornerButton:hover::before {
+  width: 0;
+}
+.cornerButton:hover::after {
+  height: 0;
+}
+.cornerButton:active {
+  border-width: 0.5rem / 2;
+}
+
+span {
+  position: relative;
+  z-index: 2;
+}
+.cornerButton::before,
+.cornerButton::after {
+  content: '';
+  position: absolute;
+  background: #2f2f2f;
+  z-index: 1;
+  transition: all 0.3s;
+}
+
+.cornerButton::before {
+  width: calc(100% - 3rem);
+  height: calc(101% + 0.5rem * 2);
+  top: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.cornerButton::after {
+  height: calc(100% - 3rem);
+  width: calc(101% + 0.5rem * 2);
+  left: -0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+} */
